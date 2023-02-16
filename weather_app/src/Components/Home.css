@@ -1,0 +1,193 @@
+button{
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover{
+    opacity: 0.2;
+}
+.search-bar{
+    
+    background: url('https://wallpaperaccess.com/full/1540005.jpg') center no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.search :where(input,button){
+    box-sizing: border-box;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: black;
+    opacity: 0.5;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    color: white;
+}
+.search .input{
+    width: 100%;
+}
+.btn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0.2rem;
+}
+#search-btn{
+    background-color: blue;
+}
+.current-weather{
+    padding: 2rem;
+   
+}
+.date{
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+.cel,.fahre{
+    padding: 0.5rem 1rem;
+    background-color: rgb(14, 2, 34);
+    color: white;
+    font-weight: 600;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.cel:hover,.fahre:hover{
+    opacity: 0.4;
+}
+.fahre{
+    background-color: #330750;
+}
+.titel-temp p,.condition p{
+  margin: 0;
+}
+.display-weather{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+.titel-temp .title{
+    color: rgb(17, 3, 39);
+    opacity: 0.5;
+    font-size: 14px;
+    font-weight: bold;
+}
+.temp{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.temp img{
+    vertical-align: middle;
+}
+
+.current-details{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 0.5rem 0;
+}
+
+.current-detail{
+    text-align: center;
+}
+.current-temp{
+    margin: 0;
+    font-size: medium;
+    color: white;
+    font-weight: bold;
+}
+.current-info{
+    margin: 0;
+    font-size: small;
+    color: white;
+
+}
+.advance-forecast{
+    display:flex;
+    grid-template-columns: repeat(3,1fr) ;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+.card p{
+    margin: 0;
+    padding: 0.2rem;
+    
+}
+.card{
+    min-width: 160px;
+    background-color: rgb(120, 204, 230);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+
+#Rain{
+background-color: #C4D3DF;
+}
+#Clouds{
+    background-color: #aab8e2
+}
+#Snow{
+    background-color: #c6ccce
+}
+#Smoke,#Mist{
+    background-color:rgb(169, 204, 201)
+}
+#Drizzle{
+    background-color:#7763e9
+}
+#Thunderstorm{
+    background-color:#121722
+}
+.fav{
+    color: rgb(6, 17, 82);
+}
+.fav input{
+    vertical-align: middle;
+}
+.my-fav-location{
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.fav-title{
+    padding: 2rem;
+    color: rgb(114, 10, 88);
+    margin: 0;
+}
+.fav-location{
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    background-color:  #031744;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fav-location img{
+    width: 50px;
+}
+.fav-location button{
+    background-color: blue;
+    font-size: small;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    
+}
